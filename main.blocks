@@ -1,10 +1,10 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="fA#$eOr?u4puKu4citzV">Counter</variable><variable id="/;q0cZHS|8c+~K?|4Rdp">User</variable></variables><block type="device_forever" id="EF?[FsSYh#t]2,1-~H5h" x="428" y="-79"></block><block type="pxt-on-start" id=";U!]!?HmBgE0Yka6gz0u" x="60" y="90"><statement name="HANDLER"><block type="variables_set" id="K1e!$.M*yQu$xj@1tCFb"><field name="VAR" id="/;q0cZHS|8c+~K?|4Rdp">User</field><value name="VALUE"><shadow type="math_number" id="iz7c6NB}%*2w_=@;~YhD"><field name="NUM">1</field></shadow></value><next><block type="device_show_leds" id="s~ZqN1x!X+Ib=/AK-:m_"><field name="LEDS">`
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="fA#$eOr?u4puKu4citzV">Counter</variable><variable id="/;q0cZHS|8c+~K?|4Rdp">User</variable></variables><block type="device_forever" id="EF?[FsSYh#t]2,1-~H5h" x="368" y="-169"></block><block type="pxt-on-start" id=";U!]!?HmBgE0Yka6gz0u" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="K1e!$.M*yQu$xj@1tCFb"><field name="VAR" id="/;q0cZHS|8c+~K?|4Rdp">User</field><value name="VALUE"><shadow type="math_number" id="iz7c6NB}%*2w_=@;~YhD"><field name="NUM">1</field></shadow></value><next><block type="device_show_leds" id="s~ZqN1x!X+Ib=/AK-:m_"><field name="LEDS">`
         . . . . . 
         . # # # . 
         . # # # . 
         . # # # . 
         . . . . .
-        `</field></block></next></block></statement></block><block type="device_button_event" id="k.k)iD8%dy~XqQQ,!CC." x="315" y="138"><field name="NAME">Button.A</field><comment pinned="true" h="373" w="831">Rock Paper Scissors 
+        `</field></block></next></block></statement></block><block type="device_button_event" id="k.k)iD8%dy~XqQQ,!CC." x="255" y="48"><field name="NAME">Button.A</field><comment pinned="true" h="373" w="831">Rock Paper Scissors 
 
 --&gt; User picks one of the three. Use the A button to scroll, the B to select
 --&gt; Computer picks a random option
