@@ -116,6 +116,7 @@ let User = 0
 let Win = 0
 let Tie = 0
 let Loss = 0
+basic.showString("A+B to end")
 Loss = 0
 Tie = 0
 Win = 0
