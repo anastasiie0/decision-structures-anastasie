@@ -51,6 +51,12 @@ input.onButtonPressed(Button.AB, function () {
     basic.showString("" + (Tie))
     basic.showString("Wins")
     basic.showString("" + (Win))
+    if (Loss < Win) {
+        basic.showString("Winner!")
+    }
+    if (Loss > Win) {
+        basic.showString("Loser!")
+    }
 })
 input.onButtonPressed(Button.B, function () {
     basic.showString("-")
@@ -82,32 +88,41 @@ input.onButtonPressed(Button.B, function () {
     }
     if (User == 1 && Computer == 1) {
         Tie += 1
+        music.play(music.stringPlayable("E B C5 A B G A F ", 120), music.PlaybackMode.InBackground)
         basic.showString("Tie")
     } else if (User == 1 && Computer == 2) {
         Loss += 1
+        music.play(music.stringPlayable("C5 A B G A F G E ", 120), music.PlaybackMode.InBackground)
         basic.showString("Lose")
     } else if (User == 1 && Computer == 3) {
         Win += 1
+        music.play(music.stringPlayable("G B A G C5 B A B ", 120), music.PlaybackMode.InBackground)
         basic.showString("Win")
     }
     if (User == 2 && Computer == 1) {
         Win += 1
+        music.play(music.stringPlayable("G B A G C5 B A B ", 120), music.PlaybackMode.InBackground)
         basic.showString("Win")
     } else if (User == 2 && Computer == 2) {
         Tie += 1
+        music.play(music.stringPlayable("E B C5 A B G A F ", 120), music.PlaybackMode.InBackground)
         basic.showString("Tie")
     } else if (User == 2 && Computer == 3) {
         Loss += 1
+        music.play(music.stringPlayable("G B A G C5 B A B ", 120), music.PlaybackMode.InBackground)
         basic.showString("Lose")
     }
     if (User == 3 && Computer == 1) {
         Loss += 1
+        music.play(music.stringPlayable("G B A G C5 B A B ", 120), music.PlaybackMode.InBackground)
         basic.showString("Lose")
     } else if (User == 3 && Computer == 2) {
         Win += 1
+        music.play(music.stringPlayable("G B A G C5 B A B ", 120), music.PlaybackMode.InBackground)
         basic.showString("Win")
     } else if (User == 3 && Computer == 3) {
         Tie += 1
+        music.play(music.stringPlayable("E B C5 A B G A F ", 120), music.PlaybackMode.InBackground)
         basic.showString("Tie")
     }
 })
